@@ -6,7 +6,8 @@ body {
     color: #212F3D;
     font-family: Montserrat;
     font-weight: 400;
-    font-size: 1.22em;
+    font-size: 1.05em;
+    line-height: 1.5;
 }
 
 .container {
@@ -137,6 +138,22 @@ footer {
 
 .social li i:hover {
     color: #a6abb1;
+}
+
+/*************************** MEDIA QUERIES *************************/
+@media (min-width: 769px) {
+  .my-photo {
+    display: inline;
+    width: 29.53%;
+  }
+
+  h2 {
+    width: 70.46%;
+    float: right;
+    text-align: left;
+    margin: 0;
+    padding: 90px 60px;
+  }
 }
 
 /************************** CLEARFIX *************************/
