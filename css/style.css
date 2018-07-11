@@ -27,6 +27,10 @@ h3 {
     font-weight: 700;
 }
 
+.wrap {
+  min-height: calc(100vh - 145.52px);
+}
+
 /*************************** HEADER **************************/
 
 .desktop-menu {
@@ -40,7 +44,7 @@ header {
 h1 {
     font-size: 1.2em;
     font-weight: 300;
-    color: mintcream; 
+    color: mintcream;
     padding: 20px 20px;
     margin: 0;
 }
@@ -56,7 +60,7 @@ h1 {
     float: right;
 }
 
-.mobile-menu li a {    
+.mobile-menu li a {
     color: mintcream;
 }
 
