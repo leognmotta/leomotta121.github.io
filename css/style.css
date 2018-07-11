@@ -28,22 +28,21 @@ h3 {
     font-weight: 700;
 }
 
-h3 a {
-  text-decoration: none;
-  color: #212F3D;
-}
-
 .wrap {
   min-height: calc(100vh - 145.52px);
 }
 
 /*************************** HEADER **************************/
 
-.desktop-menu {
+nav {
+  display: inline;
+}
+
+nav .desktop-menu {
     display: none;
 }
 
-header {
+#main-header {
     background-color: #212F3D;
 }
 
@@ -55,22 +54,22 @@ h1 {
     margin: 0;
 }
 
-.mobile-menu,
-.mobile-menu li,
+nav .mobile-menu,
+nav .mobile-menu li,
 h1 {
     display: inline-block;
 }
 
-.mobile-menu {
+nav .mobile-menu {
     padding: 2px 20px;
     float: right;
 }
 
-.mobile-menu li a {
+nav .mobile-menu li a {
     color: mintcream;
 }
 
-.fa-bars:hover {
+nav .fa-bars:hover {
     color: #a6abb1;
 }
 /*************************** ABOUT *************************/
@@ -89,7 +88,6 @@ h1 {
     box-shadow: 0px 1px #BCC0C4;
 }
 /*************************** SECTION *************************/
-
 .post {
     margin: 20px 0;
     border-radius: 10px;
@@ -115,8 +113,15 @@ h1 {
     color: mintcream;
     background-color: #212F3D;
 }
+
+.publish-date {
+  margin-right: 1.2em;
+  text-align: right;
+  font-weight: 400;
+  font-style: italic;
+}
 /*************************** FOOTER *************************/
-footer {
+#bottom-page {
     background-color: #212F3D;
     padding: 11px;
 }
@@ -147,6 +152,10 @@ footer {
 
 /*************************** MEDIA QUERIES *************************/
 @media (min-width: 769px) {
+  .main-nav {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
   .my-photo {
     display: inline;
     width: 29.53%;
@@ -163,6 +172,11 @@ footer {
 
   h3 {
     font-size: 3em;
+  }
+
+  h3 a {
+    text-decoration: none;
+    color: #212F3D;
   }
 }
 

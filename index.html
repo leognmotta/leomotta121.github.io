@@ -10,40 +10,52 @@
     </head>
     <body>
         <div class="wrap">
-            <header class="main-header">
-                <div class="group">
+            <header id="main-header">
+                <div class="group main-nav">
                     <h1 class="name">Leonardo Motta</h1>
-                    <ul class="desktop-menu">
-                        <li><a href="#">More articles</a></li>
-                        <li><a href="#">About me</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                    <ul class="mobile-menu">
-                        <li><a href="#"><i class="fas fa-bars"></i></a></li>
-                    </ul>
+                    <nav>
+                      <ul class="desktop-menu">
+                          <li><a href="#">More articles</a></li>
+                          <li><a href="#">About me</a></li>
+                          <li><a href="#">Contact</a></li>
+                      </ul>
+                      <ul class="mobile-menu">
+                          <li><a href="#"><i class="fas fa-bars"></i></a></li>
+                      </ul>
+                    </nav>
                 </div>
             </header>
 
-            <section class="container">
-                <div id="about">
-                    <div class="group">
-                        <img class="my-photo" src="imgs/my-photo.jpg">
-                        <h2>Hi! <br> My name is Leo.</h2>
-                        <p>I am from Brazil and I think I just found my biggest passion, coding! That is right, when I first saw people coding on youtube I had to give it a try, I am not good at it yet, but I told myself that I can do it and I pushed myself hard into it, and after a while I found the team <a href="http://referrals.trhou.se/leonardomotta" target="_blank">treehouse</a> and I will have to say... They are amazing! They really make code look simple and easy to understand, I am at the very beginning on my journey but I never pushed myself so hard at something I am in love! For that reason, I am building this blog to share what I am learning and maybe in the future see how much I have evolved!</p>
-                    </div>
-                </div>
-            </section>
+            <main>
+              <section class="container">
+                  <div id="about">
+                      <div class="group">
+                        <article>
+                          <img class="my-photo" src="imgs/my-photo.jpg" alt="Leonardo Motta photo">
+                          <h2>Hi! <br> My name is Leo.</h2>
+                          <p>I am from Brazil and I think I just found my biggest passion, coding! That is right, when I first saw people coding on youtube I had to give it a try, I am not good at it yet, but I told myself that I can do it and I pushed myself hard into it, and after a while I found the team <aside><a href="http://referrals.trhou.se/leonardomotta" target="_blank">treehouse</a></aside> and I will have to say... They are amazing! They really make code look simple and easy to understand, I am at the very beginning on my journey but I never pushed myself so hard at something I am in love! For that reason, I am building this blog to share what I am learning and maybe in the future see how much I have evolved!</p>
+                        </article>
+                      </div>
+                  </div>
+              </section>
 
-            <section class="blog-posts container">
-                <div class="post">
-                    <h3><a href="#">MOBILE-FIRST DESIGN: WHAT IT IS AND HOW TO DO IT!</a></h3>
-                    <p>There are many benefits to building mobile layouts before building them on wider screens, mobile layout is easier to build and it is a better strategy to make responsive layouts....</p>
-                    <p class="read-more"><a href="#">Read more...</a></p>
-                </div>
-            </section>
+              <section class="blog-posts container">
+                  <div class="post">
+                      <article>
+                        <header>
+                          <h3><a href="#">MOBILE-FIRST DESIGN: WHAT IT IS AND HOW TO DO IT!</a></h3>
+                          <p>By: Leonardo Motta</p>
+                        </header>
+                        <p>There are many benefits to building mobile layouts before building them on wider screens, mobile layout is easier to build and it is a better strategy to make responsive layouts....</p>
+                        <p class="read-more"><a href="#">Read more...</a></p>
+                        <footer class="publish-date">July 11, 2018</footer>
+                      </article>
+                  </div>
+              </section>
+            </main>
         </div>
 
-        <footer>
+        <footer id="bottom-page">
             <ul class="social">
                 <li><i class="fab fa-facebook-square"></i></li>
                 <li><i class="fab fa-instagram"></i></li>
