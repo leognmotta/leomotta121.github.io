@@ -142,6 +142,7 @@ nav .fa-bars:hover {
 
 .social {
   text-align: center;
+  font-size: 2em;
 }
 
 .social li {
@@ -202,6 +203,10 @@ nav .fa-bars:hover {
   h3 a {
     text-decoration: none;
     color: #212F3D;
+  }
+
+  .social {
+    font-size: 1.5em;
   }
 }
 
