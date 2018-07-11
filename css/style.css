@@ -28,6 +28,11 @@ h3 {
     font-weight: 700;
 }
 
+h3 a {
+    text-decoration: none;
+    color: #212F3D;
+}
+
 .wrap {
   min-height: calc(100vh - 145.52px);
 }
