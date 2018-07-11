@@ -28,6 +28,11 @@ h3 {
     font-weight: 700;
 }
 
+h3 a {
+  text-decoration: none;
+  color: #212F3D;
+}
+
 .wrap {
   min-height: calc(100vh - 145.52px);
 }
@@ -148,11 +153,16 @@ footer {
   }
 
   h2 {
+    font-size: 2.5em;
     width: 70.46%;
     float: right;
     text-align: left;
     margin: 0;
-    padding: 90px 60px;
+    padding: 55px 40px;
+  }
+
+  h3 {
+    font-size: 3em;
   }
 }
 
