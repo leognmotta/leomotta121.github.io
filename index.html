@@ -1,63 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122103839-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-122103839-1');
-</script>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700" rel="stylesheet">
-
-  <title>Leonardo Motta</title>
-</head>
-
-<body>
-  <header>
-    <nav class="group">
-    <div>
-      <div class="dropdown">
-        <span><img src="img/us.svg" alt="United States flag">English</span>
-        <div class="dropdown-content">
-          <img src="img/br.svg" alt="Brazil flag"><a href="#">Português</a>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Leonardo Motta</title>
+    </head>
+    <body>
+        <div class="wrap">
+            <header class="main-header">
+                <div class="group">
+                    <h1 class="name">Leonardo Motta</h1>
+                    <ul class="desktop-menu">
+                        <li><a href="#">More articles</a></li>
+                        <li><a href="#">About me</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <ul class="mobile-menu">
+                        <li><a href="#"><i class="fas fa-bars"></i></a></li>
+                    </ul>
+                </div>
+            </header> 
+            
+            <section class="container">
+                <div id="about">                    
+                    <img class="my-photo" src="imgs/my-photo.jpg">
+                    <div>
+                        <h2>Hi! <br> My name is Leo.</h2>
+                        <p>Hi! My name is Leonardo Motta and I am a front-end web developer from Brazil. I love what I do and always look to improve my skills, my main goal is to become a full stack javaScript developer. I have a lot of passion for designing user experience and coding. If you are seeking for someone to make your awesome web page or looking to hire for your company, you can contact me here.</p> 
+                    </div>
+                </div>
+            </section>
+            
+            <section class="blog-posts container">
+                <div class="post">
+                    <h3>THIS IS A REALLY LONG TITLE</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet nisl suscipit adipiscing bibendum est ultricies integer quis. Tincidunt dui ut ornare lectus sit amet est placerat. A arcu cursus vitae congue mauris rhoncus aenean....</p> 
+                    <p class="read-more"><a href="#">Read more...</a></p>                    
+                </div>
+                
+                <div class="post">
+                    <h3>SHORT TITLE</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet nisl suscipit adipiscing bibendum est ultricies....</p> 
+                    <p class="read-more"><a href="#">Read more...</a></p>
+                </div>
+                
+                <div class="post">
+                    <h3>YET ONE MORE TITLE</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet nisl suscipit adipiscing bibendum est ultricies integer quis. Tincidunt dui ut ornare....</p> 
+                    <p class="read-more"><a href="#">Read more...</a></p>
+                </div>
+            </section>
         </div>
-      </div>
-
-      <ul class="main-nav">
-        <li><a href="#abaut">About</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">Contact</a></li>
-        <li><a href="">Blog</a></li>
-      </ul>
-    </div>
-    </nav>
-
-    <div>
-      <h1><span>Leonardo Motta</span><br> WEB DEVELOPER</h1>
-    </div>
-  </header>
-
-  <main>
-  <section id="abaut">
-      <div class="about-me row">
-        <h2>About me</h2>
-        <p class="text-content">
-          Hi! My name is Leonardo Motta and I am a front-end web developer from Brazil. I love what I do and always look to improve my skills, my main goal is to become a full stack javaScript developer. I have a lot of passion for designing user experience and coding. If you are seeking for someone to make your awesome web page or looking to hire for your company, you can contact me <a href="#contact">here.</a>
-        </p>
-        <img src="img/my-photo.jpg" alt="Leonardo Motta picture" class="is-centered">
-      </div>
-    </section>
-  </main>
-</body>
-
+        
+        <footer>
+            <ul class="social">
+                <li><i class="fab fa-facebook-square"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-linkedin"></i></li>
+                <li><i class="fab fa-github"></i></li>
+            </ul>
+            <p id="byleo">by Leonardo Motta &copy;</p>
+        </footer>
+    </body>
 </html>

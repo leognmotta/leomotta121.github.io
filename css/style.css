@@ -1,168 +1,144 @@
-/* 1.0 BASIC SETUP ----*/
-
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
-html,
 body {
-  font-family: Montserrat;
-  font-weight: 400;
-  font-size: 16px;
-  text-rendering: optimizeLegibility;
-  overflow-x: hidden;
+    color: #212F3D;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 1.22em;
 }
 
-/* 2.0 CLEARFIX ----*/
-
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* 3.0 REUSABLE ----*/
-
-h1 {
-  color: white;
-  font-weight: 100;
-  text-align: center;
-  font-size: 2em;
-  letter-spacing: 10px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-}
-
-h1 span {
-  font-size: 2.5em;
-  display: inline-block;
-  margin-bottom: 10px;
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 1.1em;
 }
 
 h2 {
-  color: #494c4e;
-  text-align: center;
-  font-size: 3em;
-  font-weight: 700;
-  margin-bottom: 40px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 700;
 }
 
-section {
-  padding: 80px 0;
+h3 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
 }
 
-.is-centered {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+/*************************** HEADER **************************/
 
-.text-content {
-  width: 70%;
-  text-align: center;
-  color: #494c4e;
-  line-height: 1.5;
-  margin: auto;
+.desktop-menu {
+    display: none;
 }
-
-.row {
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
-/* 4.0 HEADER ----*/
 
 header {
-  height: 100hv;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-  url(../img/apple-device-blur-blurry-273222.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  background-attachment: fixed;
-  position: relative;
+    background-color: #212F3D;
 }
 
-/* 4.1 MAIN-NAV ----*/
-
-.main-nav {
-  float: right;
-  margin-top: 55px;
+h1 {
+    font-size: 1.2em;
+    font-weight: 300;
+    color: mintcream; 
+    padding: 20px 20px;
+    margin: 0;
 }
 
-.main-nav li {
-  display: inline;
-  margin-right: 16px;
-  padding-bottom: 5px;
-  list-style: none;
+.mobile-menu,
+.mobile-menu li,
+h1 {
+    display: inline-block;
 }
 
-.main-nav li a:link,
-.main-nav li a:visited {
-  text-decoration: none;
-  color: white;
+.mobile-menu {
+    padding: 2px 20px;
+    float: right;
 }
 
-.main-nav li:hover,
-.main-nav li:active {
-  border-bottom: 1px solid white;
+.mobile-menu li a {    
+    color: mintcream;
 }
 
-/* 4.2 Lenguage nav ----*/
-
-.dropdown {
-  color: white;
-  float: right;
-  display: inline-block;
-  position: relative;
-  border-left: solid 1px white;
-  margin: 55px 120px 0 0;
+.fa-bars:hover {
+    color: #a6abb1;
+}
+/*************************** ABOUT *************************/
+.my-photo {
+    height: 200px;
+    border-radius: 20%;
+    display: block;
+    margin: 30px auto;
+    border: solid 2px #BCC0C4;
+    box-shadow: 5px 5px 10px #BCC0C4;
 }
 
-.dropdown span {
-  padding-left: 16px;
-  cursor: pointer;
+#about {
+    padding: 1em 0;
+    border-radius: 10px;
+    box-shadow: 0px 1px #BCC0C4;
+}
+/*************************** SECTION *************************/
+
+.post {
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 1px #BCC0C4;
 }
 
-.dropdown img,
-.dropdown-content img {
-  height: 15px;
-  margin-right: 10px;
+.post {
+    padding: 18px 0;
 }
 
-.dropdown-content {
-  display:none;
-  position: absolute;
-  padding-top: 15px;
-  padding-left: 16px;
-  width: 150px;
+.read-more {
+    text-align: right;
+    margin-right: 1em;
 }
 
-.dropdown-content a {
-  text-decoration: none;
-  color: white;
+.read-more a{
+    color: #212F3D;
+    padding: 5px 7px;
 }
 
-.dropdown:hover .dropdown-content {
-   display: inline-block;
+.read-more a:hover {
+    border-radius: 5px;
+    color: mintcream;
+    background-color: #212F3D;
+}
+/*************************** FOOTER *************************/
+footer {
+    background-color: #212F3D;
+    padding: 11px;
 }
 
-/* ABOUT ME ----*/
-
-.about-me img {
-  height: 250px;
-  border: solid 2px #494c4e;
-  border-radius: 50%;
-  margin-top: 40px;
-  box-shadow: 5px 5px 5px grey;
+#byleo {
+    color: mintcream;
+    text-align: center;
+    margin: 30px 0 10px 0;
 }
 
-.about-me p a:link,
-.about-me p a:visited {
-  color: #494c4e;
+.social {
+    text-align: center;
+}
+
+.social li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.social li i {
+    color: mintcream;
+    cursor: pointer;
+}
+
+.social li i:hover {
+    color: #a6abb1;
+}
+
+/************************** CLEARFIX *************************/
+
+.group::after {
+    content: "";
+    clear: both;
+    display: table;
 }
