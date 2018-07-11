@@ -65,12 +65,15 @@ h1 {
     display: inline-block;
 }
 
-nav .mobile-menu {
+nav .mobile-menu,
+nav .desktop-menu {
     padding: 2px 20px;
     float: right;
 }
 
-nav .mobile-menu li a {
+nav .mobile-menu li a,
+nav .desktop-menu li a {
+    text-decoration: none;
     color: mintcream;
 }
 
@@ -127,36 +130,53 @@ nav .fa-bars:hover {
 }
 /*************************** FOOTER *************************/
 #bottom-page {
-    background-color: #212F3D;
-    padding: 11px;
+  background-color: #212F3D;
+  padding: 11px;
 }
 
 #byleo {
-    color: mintcream;
-    text-align: center;
-    margin: 30px 0 10px 0;
+  color: mintcream;
+  text-align: center;
+  margin: 30px 0 10px 0;
 }
 
 .social {
-    text-align: center;
+  text-align: center;
 }
 
 .social li {
-    display: inline-block;
-    padding: 10px;
+  display: inline-block;
+  padding: 10px;
 }
 
 .social li i {
-    color: mintcream;
-    cursor: pointer;
+  color: mintcream;
+  cursor: pointer;
 }
 
 .social li i:hover {
-    color: #a6abb1;
+  color: #a6abb1;
 }
 
 /*************************** MEDIA QUERIES *************************/
 @media (min-width: 769px) {
+  nav .mobile-menu {
+    display: none;
+  }
+
+  nav .desktop-menu,
+  nav .desktop-menu li {
+    display: inline-block;
+  }
+
+  nav .desktop-menu li {
+    padding: 0 10px;
+  }
+
+  nav .desktop-menu li a:hover {
+    border-bottom: solid 1px mintcream;
+  }
+
   .main-nav {
     max-width: 1440px;
     margin: 0 auto;
