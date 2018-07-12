@@ -1,70 +1,88 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <title>Leonardo Motta</title>
-    </head>
-    <body>
-        <div class="wrap">
-            <header id="main-header">
-                <div class="group main-nav">
-                    <h1 class="name">Leonardo Motta</h1>
-                    <nav>
-                      <ul class="desktop-menu">
-                          <li><a href="#">Articles</a></li>
-                          <li><a href="#">About me</a></li>
-                          <li><a href="#">Contact</a></li>
-                      </ul>
-                      <ul class="mobile-menu">
-                          <li><a href="#"><i class="fas fa-bars"></i></a></li>
-                      </ul>
-                    </nav>
-                </div>
-            </header>
 
-            <main>
-              <section class="container">
-                  <div id="about">
-                      <div class="group">
-                        <article>
-                          <img class="my-photo" src="imgs/my-photo.jpg" alt="Leonardo Motta photo">
-                          <h2>Hi! <br> My name is Leo.</h2>
-                          <p>I am from Brazil and I just found my biggest passion, coding! I stumbled upon this passion one day while  browsing youtube and seeing coding tutorials and just had to try it out for myself. Even though I'm still a beginner, I told myself that I could do it and have been motivated to give my best. Later on I found a great resource to further my knowledge via Team <a href="http://referrals.trhou.se/leonardomotta" target="_blank">Treehouse</a> and I have to say they do a great work. Team Treehouse make code look simple and easy to understand for a beginner.</p>
-                          <p>Even though I am at the very beginning on my journey, I've never pushed myself so hard for something I love! For that reason, I am building this blog to share my journey learning code and be able to look back to see how much I've improved.</p>
-                        </article>
-                      </div>
-                  </div>
-              </section>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122103839-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-              <section class="blog-posts container">
-                  <div class="post">
-                      <article>
-                        <header>
-                          <h3><a href="#">MOBILE-FIRST DESIGN: WHAT IT IS AND HOW TO DO IT!</a></h3>
-                          <p>By: Leonardo Motta</p>
-                        </header>
-                        <p>There are many benefits to building mobile layouts before building them on wider screens, mobile layout is easier to build and it is a better strategy to make responsive layouts....</p>
-                        <p class="read-more"><a href="#">Read more...</a></p>
-                        <footer class="publish-date">July 11, 2018</footer>
-                      </article>
-                  </div>
-              </section>
-            </main>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-122103839-1');
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Leonardo Motta</title>
+</head>
+
+<body>
+  <div class="wrap">
+    <header id="main-header">
+      <div class="group main-nav">
+        <h1 class="name">Leonardo Motta</h1>
+        <nav>
+          <ul class="desktop-menu">
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <ul class="mobile-menu">
+            <li><a href="#"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="container">
+        <div id="about">
+          <div class="group">
+            <article>
+              <img class="my-photo" src="imgs/my-photo.jpg" alt="Leonardo Motta photo">
+              <h2>Hi! <br> My name is Leo.</h2>
+              <p>I am from Brazil and I just found my biggest passion, coding! I stumbled upon this passion one day while browsing youtube and seeing coding tutorials and just had to try it out for myself. Even though I'm still a beginner, I told myself
+                that I could do it and have been motivated to give my best. Later on I found a great resource to further my knowledge via Team <a href="http://referrals.trhou.se/leonardomotta" target="_blank">Treehouse</a> and I have to say they do a
+                great work. Team Treehouse make code look simple and easy to understand for a beginner.</p>
+              <p>Even though I am at the very beginning on my journey, I've never pushed myself so hard for something I love! For that reason, I am building this blog to share my journey learning code and be able to look back to see how much I've improved.</p>
+            </article>
+          </div>
         </div>
+      </section>
 
-        <footer id="bottom-page">
-            <ul class="social">
-                <li><i class="fab fa-facebook-square"></i></li>
-                <li><i class="fab fa-instagram"></i></li>
-                <li><i class="fab fa-twitter"></i></li>
-                <li><i class="fab fa-linkedin"></i></li>
-                <li><i class="fab fa-github"></i></li>
-            </ul>
-            <p id="byleo">by Leonardo Motta &copy;</p>
-        </footer>
-    </body>
+      <section class="blog-posts container">
+        <div class="post">
+          <article>
+            <header>
+              <h3><a href="#">MOBILE-FIRST DESIGN: WHAT IT IS AND HOW TO DO IT!</a></h3>
+              <p>By: Leonardo Motta</p>
+            </header>
+            <p>There are many benefits to building mobile layouts before building them on wider screens, mobile layout is easier to build and it is a better strategy to make responsive layouts....</p>
+            <p class="read-more"><a href="#">Read more...</a></p>
+            <footer class="publish-date">July 11, 2018</footer>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer id="bottom-page">
+    <ul class="social">
+      <li><i class="fab fa-facebook-square"></i></li>
+      <li><i class="fab fa-instagram"></i></li>
+      <li><i class="fab fa-twitter"></i></li>
+      <li><i class="fab fa-linkedin"></i></li>
+      <li><i class="fab fa-github"></i></li>
+    </ul>
+    <p id="byleo">by Leonardo Motta &copy;</p>
+  </footer>
+
+</body>
+
 </html>
