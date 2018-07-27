@@ -1,36 +1,37 @@
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 body {
-    color: #212F3D;
-    font-family: Montserrat;
-    font-weight: 400;
-    font-size: 1.05em;
-    line-height: 1.5;
+  color: #212f3d;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 1.05em;
+  line-height: 1.5;
 }
 
 .container {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 0 1.1em;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1.1em;
 }
 
 h2 {
-    text-align: center;
-    font-size: 1.8em;
-    font-weight: 700;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 700;
 }
 
 h3 {
-    text-align: center;
-    font-size: 2em;
-    font-weight: 700;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
 }
 
 h3 a {
-    text-decoration: none;
-    color: #212F3D;
+  text-decoration: none;
+  color: #212f3d;
 }
 
 .wrap {
@@ -44,82 +45,85 @@ nav {
 }
 
 nav .desktop-menu {
-    display: none;
+  display: none;
 }
 
 #main-header {
-    background-color: #212F3D;
+  background-color: #212f3d;
 }
 
 h1 {
-    font-size: 1.2em;
-    font-weight: 300;
-    color: mintcream;
-    padding: 20px 20px;
-    margin: 0;
+  font-size: 1.2em;
+  font-weight: 300;
+  color: mintcream;
+  padding: 20px 20px;
+  margin: 0;
 }
 
 nav .mobile-menu,
 nav .mobile-menu li,
 h1 {
-    display: inline-block;
+  display: inline-block;
 }
 
 nav .mobile-menu,
 nav .desktop-menu {
-    padding: 2px 20px;
-    float: right;
+  padding: 2px 20px;
+  float: right;
 }
 
 nav .mobile-menu li a,
 nav .desktop-menu li a {
-    text-decoration: none;
-    color: mintcream;
+  text-decoration: none;
+  color: mintcream;
 }
 
 nav .fa-bars:hover {
-    color: #a6abb1;
+  color: #a6abb1;
 }
 /*************************** ABOUT *************************/
 .my-photo {
-    height: 200px;
-    border-radius: 20%;
-    display: block;
-    margin: 30px auto;
-    border: solid 2px #BCC0C4;
-    box-shadow: 5px 5px 10px #BCC0C4;
+  height: 200px;
+  border-radius: 20%;
+  display: block;
+  margin: 30px auto;
+  border: solid 2px #bcc0c4;
+  -webkit-box-shadow: 5px 5px 10px #bcc0c4;
+  box-shadow: 5px 5px 10px #bcc0c4;
 }
 
 #about {
-    padding: 1em 0;
-    border-radius: 10px;
-    box-shadow: 0px 1px #BCC0C4;
+  padding: 1em 0;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 1px #bcc0c4;
+  box-shadow: 0px 1px #bcc0c4;
 }
 /*************************** SECTION *************************/
 .post {
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0px 1px #BCC0C4;
+  margin: 20px 0;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 1px #bcc0c4;
+  box-shadow: 0px 1px #bcc0c4;
 }
 
 .post {
-    padding: 18px 0;
+  padding: 18px 0;
 }
 
 .read-more {
-    text-align: right;
-    margin-right: 1em;
+  text-align: right;
+  margin-right: 1em;
 }
 
-.read-more a{
-    color: #212F3D;
-    padding: 5px 7px;
+.read-more a {
+  color: #212f3d;
+  padding: 5px 7px;
 }
 
 .read-more a:hover {
-    border-radius: 5px;
-    color: mintcream;
-    background-color: #212F3D;
+  border-radius: 5px;
+  color: mintcream;
+  background-color: #212f3d;
 }
 
 .publish-date {
@@ -130,7 +134,7 @@ nav .fa-bars:hover {
 }
 /*************************** FOOTER *************************/
 #bottom-page {
-  background-color: #212F3D;
+  background-color: #212f3d;
   padding: 11px;
 }
 
@@ -202,7 +206,7 @@ nav .fa-bars:hover {
 
   h3 a {
     text-decoration: none;
-    color: #212F3D;
+    color: #212f3d;
   }
 
   .social {
@@ -210,10 +214,26 @@ nav .fa-bars:hover {
   }
 }
 
+/************************** BLOG POST *************************/
+#author {
+  border-bottom: none;
+}
+
+#blog-post {
+  margin: 20px 0;
+}
+
+.author-photo {
+  height: 100px;
+  border-radius: 20%;
+  margin-top: 30px;
+  border: solid 1px #bcc0c4;
+}
+
 /************************** CLEARFIX *************************/
 
 .group::after {
-    content: "";
-    clear: both;
-    display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
