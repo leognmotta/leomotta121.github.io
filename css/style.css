@@ -16,6 +16,10 @@ body {
   padding: 0 auto;
 }
 
+.treehouse {
+  height: 200px;
+}
+
 .container {
   max-width: 720px;
   margin: 0 auto;
@@ -40,7 +44,7 @@ h3 a {
 }
 
 .wrap {
-  min-height: calc(100vh - 145.52px);
+  min-height: calc(100vh - 169.19px);
 }
 
 /*************************** HEADER **************************/

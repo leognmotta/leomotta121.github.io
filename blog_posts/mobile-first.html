@@ -45,14 +45,36 @@
         <div id="blog-post">
           <article>
             <header>
-              <a href="../index.html">
-                <img class="author-photo" src="../imgs/my-photo.jpg" alt="Author picture">
-              </a>
+              <a href="../index.html"><img class="author-photo" src="../imgs/my-photo.jpg" alt="Author picture"></a>
               <p class="publish-date-blog">July 11, 2018</p>
               <h3>MOBILE-FIRST DESIGN: WHY IS IT GOOD?</h3>
             </header>
             <p>There are many benefits to building mobile layouts before building them on wider screens, mobile layout is easier to build and it is a better strategy to make layouts that fits in every screen....</p>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ipsa illo dolorem temporibus officiis fugiat aspernatur et architecto a inventore cupiditate sed modi qui distinctio enim, placeat dolorum eaque quas. Sapiente repellat vero adipisci, sint voluptas quas architecto fugit dolor aperiam culpa, animi rem optio necessitatibus? Fugiat quae labore perferendis fugit id odit accusamus exercitationem. Minus, nisi nobis dolores, explicabo repudiandae cupiditate velit possimus placeat earum deleniti totam dignissimos labore nam consequatur repellat beatae? Quam vero aliquid dicta doloremque culpa excepturi totam obcaecati, est officiis nam iure, tenetur blanditiis ea ad? Autem voluptas non praesentium cupiditate enim earum excepturi cumque?</p>
+            <p>Look at the code here:
+              <!-- HTML generated using hilite.me --><div style="background: #202020; overflow:auto;width:auto;border-radius: 10px;padding:1em;"><pre style="margin: 0; line-height: 125%"><span style="color: #6ab825; font-weight: bold">const</span> <span style="color: #d0d0d0">listDiv</span> <span style="color: #d0d0d0">=</span> <span style="color: #24909d">document</span><span style="color: #d0d0d0">.querySelector(</span><span style="color: #ed9d13">&#39;.list&#39;</span><span style="color: #d0d0d0">);</span>
+<span style="color: #6ab825; font-weight: bold">const</span> <span style="color: #d0d0d0">input</span> <span style="color: #d0d0d0">=</span> <span style="color: #24909d">document</span><span style="color: #d0d0d0">.querySelector(</span><span style="color: #ed9d13">&#39;input.description&#39;</span><span style="color: #d0d0d0">);</span>
+<span style="color: #6ab825; font-weight: bold">const</span> <span style="color: #d0d0d0">p</span> <span style="color: #d0d0d0">=</span> <span style="color: #24909d">document</span><span style="color: #d0d0d0">.querySelector(</span><span style="color: #ed9d13">&#39;p.description&#39;</span><span style="color: #d0d0d0">);</span>
+<span style="color: #6ab825; font-weight: bold">const</span> <span style="color: #d0d0d0">button</span> <span style="color: #d0d0d0">=</span> <span style="color: #24909d">document</span><span style="color: #d0d0d0">.querySelector(</span><span style="color: #ed9d13">&#39;button.description&#39;</span><span style="color: #d0d0d0">);</span>
+
+<span style="color: #d0d0d0">toggleList.addEventListener(</span><span style="color: #ed9d13">&#39;click&#39;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">()</span> <span style="color: #d0d0d0">=&gt;</span> <span style="color: #d0d0d0">{</span>
+  <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #d0d0d0">(listDiv.style.display</span> <span style="color: #d0d0d0">===</span> <span style="color: #ed9d13">&#39;none&#39;</span><span style="color: #d0d0d0">)</span> <span style="color: #d0d0d0">{</span>
+  <span style="color: #d0d0d0">toggleList.textContent</span> <span style="color: #d0d0d0">=</span> <span style="color: #ed9d13">&#39;Hide list&#39;</span><span style="color: #d0d0d0">;</span>
+  <span style="color: #d0d0d0">listDiv.style.display</span> <span style="color: #d0d0d0">=</span> <span style="color: #ed9d13">&#39;block&#39;</span><span style="color: #d0d0d0">;</span>
+  <span style="color: #d0d0d0">}</span> <span style="color: #6ab825; font-weight: bold">else</span> <span style="color: #d0d0d0">{</span>
+  <span style="color: #d0d0d0">toggleList.textContent</span> <span style="color: #d0d0d0">=</span> <span style="color: #ed9d13">&#39;Show list&#39;</span><span style="color: #d0d0d0">;</span>
+  <span style="color: #d0d0d0">listDiv.style.display</span> <span style="color: #d0d0d0">=</span> <span style="color: #ed9d13">&#39;none&#39;</span><span style="color: #d0d0d0">;</span>
+  <span style="color: #d0d0d0">}</span>
+<span style="color: #d0d0d0">});</span>
+
+<span style="color: #d0d0d0">button.addEventListener(</span><span style="color: #ed9d13">&#39;click&#39;</span><span style="color: #d0d0d0">,</span> <span style="color: #d0d0d0">()</span> <span style="color: #d0d0d0">=&gt;</span> <span style="color: #d0d0d0">{</span>
+  <span style="color: #d0d0d0">p.textContent</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">input.value</span> <span style="color: #d0d0d0">+</span> <span style="color: #ed9d13">&#39;:&#39;</span><span style="color: #d0d0d0">;</span>
+<span style="color: #d0d0d0">})</span>
+
+<span style="color: #d0d0d0">p.title</span> <span style="color: #d0d0d0">=</span> <span style="color: #ed9d13">&#39;List description&#39;</span><span style="color: #d0d0d0">;</span>
+</pre></div>
+  
+            </p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id veniam eveniet labore ipsa harum provident, temporibus, quis voluptates recusandae deleniti reiciendis cupiditate aut natus accusantium quasi minima odit tempore, non consequuntur. Ullam et culpa veniam totam non assumenda odio aliquid voluptate deserunt sequi, quod veritatis. Laboriosam eos omnis est? Sunt.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, earum doloribus! Ea voluptas et nobis! Dolor, voluptates natus reiciendis dolorem enim incidunt magni deleniti porro odio deserunt officia doloribus dolorum veniam qui quasi sed sint, fugiat eligendi mollitia? Eaque quam ullam exercitationem cupiditate quisquam eligendi sequi voluptatibus, ea eveniet perferendis qui possimus ex. Aliquid architecto quae rem tempore magni quasi rerum ut harum autem reprehenderit? Asperiores animi dignissimos obcaecati ipsa exercitationem neque eligendi impedit vel et non, sapiente repellat voluptatem facere suscipit earum voluptas? Omnis voluptates minus cupiditate ipsam? Sequi sapiente amet reiciendis possimus, ex deserunt qui odio consectetur temporibus vitae exercitationem. Consectetur fuga, itaque ducimus soluta atque eum deserunt pariatur laboriosam perferendis saepe repellat necessitatibus dolores doloremque, vel officiis sapiente nisi dicta reprehenderit facere, quos nihil in molestias dolorum? Laudantium nam amet accusamus quam voluptatibus dicta adipisci, ullam sapiente. Quod fugiat saepe qui obcaecati! Accusantium explicabo autem laboriosam amet, magnam temporibus sequi veniam atque ullam deleniti veritatis perferendis quisquam ratione rerum dignissimos tempore neque eveniet? Mollitia, tempore voluptas. Nesciunt culpa, mollitia delectus tempora nam sapiente ratione, repudiandae numquam in modi quia. Atque id quisquam numquam ut, culpa saepe incidunt exercitationem reprehenderit. Totam, beatae sapiente nemo fugit corrupti in voluptates. </p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste sunt obcaecati eligendi cum, nulla veniam saepe rem dolorem ipsam optio? Omnis adipisci pariatur quae eos veniam nostrum molestiae veritatis incidunt ratione aspernatur ipsa, accusamus doloremque, maxime earum voluptatum, natus nobis quas nihil nesciunt commodi. Unde repudiandae ipsum placeat quis asperiores quas dignissimos eum neque est? Commodi reiciendis deleniti, tenetur nesciunt eius nihil aperiam corrupti asperiores, ad laborum perferendis ducimus. Dolor dolore illum labore corrupti odio tenetur rerum repellendus repudiandae voluptatibus.</p>
@@ -60,6 +82,12 @@
         </div>
       </section>
     </main>
+  </div>
+
+  <div class="container">
+    <a href="http://referrals.trhou.se/leonardomotta" target="_blank">
+      <img class="treehouse" src="https://static.teamtreehouse.com/assets/content/referral-badge-grn.png" />
+    </a>
   </div>
 
   <div class="container">
